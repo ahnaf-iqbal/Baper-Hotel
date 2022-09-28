@@ -17,8 +17,6 @@
 ![View All Tickets(Admin)](https://image.prntscr.com/image/8cr_-H4wRQC3HxOVBQseFA.jpg)
 ### Place & View Tickets(Customer)
 ![Tickets(User)](https://image.prntscr.com/image/M_VIy9bRQCe9eYFsn4AWUA.jpg)
-### Communicating on Support Ticket
-![Support Ticket](https://image.prntscr.com/image/aR7kQo5AQpSa_Y3kU3SDcA.jpg)
 ### Modify Details(Customer)
 ![Modifying Records](https://image.prntscr.com/image/sXogBp55SMahRleBIv7Plg.jpg)
 ### User Management(Admin)
