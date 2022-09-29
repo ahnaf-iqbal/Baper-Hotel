@@ -13,7 +13,7 @@
 ![Records](https://image.prntscr.com/image/QSWkwRmNSkOnL9TrrfkpJA.jpg)
 ### View all Orders(Admin)
 ![Records](https://image.prntscr.com/image/QsUxzm5nTRatVyt5PY-xNg.jpg)
-### List Tickets
+### List  Tickets
 ![View All Tickets(Admin)](https://image.prntscr.com/image/8cr_-H4wRQC3HxOVBQseFA.jpg)
 ### Modify  Details(Customer)
 ![Modifying Records](https://image.prntscr.com/image/sXogBp55SMahRleBIv7Plg.jpg)
