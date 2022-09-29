@@ -15,16 +15,16 @@
 ![Records](https://image.prntscr.com/image/QsUxzm5nTRatVyt5PY-xNg.jpg)
 ### List Tickets
 ![View All Tickets(Admin)](https://image.prntscr.com/image/8cr_-H4wRQC3HxOVBQseFA.jpg)
-### Modify Details(Customer)
+### Modify  Details(Customer)
 ![Modifying Records](https://image.prntscr.com/image/sXogBp55SMahRleBIv7Plg.jpg)
 ### User Management(Admin)
 ![Modifying Records](https://image.prntscr.com/image/St11KReLQVOXHctcmsHY-g.jpg)
 
 
 How To Install -
---------------
+---------------
 
-1. Create Database food.
+1. Create Database food..
 2. Run food.sql script provided in sql folder.
 3. Go to login.php and try out our application. Sample user credentials can be found in users & wallet_details table.
 
