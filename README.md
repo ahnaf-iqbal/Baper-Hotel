@@ -22,7 +22,7 @@
 
 
 How To Install -
----------------
+----------------
 
 1. Create Database food..
 2. Run food.sql script provided in sql folder.
