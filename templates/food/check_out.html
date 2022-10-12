@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row my-5">
+    <div class="col-md-4 mx-auto">
+        <div class="card">
+            <div class="card-body">
+                {% if messages %}
+                        {% for message in messages %}
+                            <p class="{{message.tags}}">{{message}}</p>     <!--tags can be error, warning, success, info, debug (refer to documentation: https://docs.djangoproject.com/en/4.0/ref/contrib/messages/)-->
+                        {% endfor %}
+                {% endif %}
+
+                    <form action="{% url 'place_order' %}" method="post" onsubmit="return validate();">
+                        {% csrf_token %}    <!--if we donot write this a error page will be generated after we click on sign up button-->
+
+                        <div class="mb-1">
+                            <label for="otp">Please check your registered mail id for OTP</label>
+                            <input type="text" name="otp" id="otp" class="form-control" placeholder="OTP" required> <!--required means, without giving input form will not be submitted-->
+                            <label for="mobile number error" id="sic_error" class="text-danger"></label>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Verify">
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
+

@@ -1,0 +1,75 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block content %} 
+
+<div class="container">
+    <div class="row my-3">
+        <div class="col-md-4 mx-auto">
+            <div class="card bg-dark text-light">
+                <div class="card-header">
+                    <h3 class="h3">Sign Up</h3>
+                </div>
+                <div class="card-body">
+
+                    {% if messages %}
+                        {% for message in messages %}
+                            <p class="{{message.tags}}">{{message}}</p>     <!--tags can be error, warning, success, info, debug (refer to documentation: https://docs.djangoproject.com/en/4.0/ref/contrib/messages/)-->
+                        {% endfor %}
+                    {% endif %}
+
+                    <!-- when we click submit btn, action is performed for the form and control flows to urls.py of user app with url 'signup' is transfered to urls.py to check for the path-->
+                    <form action="{% url 'signup' %}" method="post" onsubmit="return validate();">  <!--validate() is the js function in signup-validator.js-->
+                        {% csrf_token %}    <!--we we donot write this-->
+                        <div class="mb-1">
+                            <label for="first_name">First Name</label>
+                            <input type="text" name="first_name" id="first_name" class="form-control">
+                            <label for="firstname error" id="firstname_error" class="text-danger"></label>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="last_name">Last Name</label>
+                            <input type="text" name="last_name" id="last_name" class="form-control">
+                            <label for="lastname error" id="lastname_error" class="text-danger"></label>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="username">Mobile Number</label>
+                            <input type="text" name="username" id="username" class="form-control">
+                            <label for="mobile number error" id="sic_error" class="text-danger"></label>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" id="email" class="form-control"><label for="name error" id="name_error" class="text-danger"></label>
+                            <label for="email error" id="email_error" class="text-danger"></label>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="password">Password</label>
+                            <input type="password" name="password" id="password" class="form-control">
+                            <label for="password error" id="password_error" class="text-danger"></label>
+                        </div>
+
+                        <div class="mb-1">
+                            <label for="password2">Confirm Password</label>
+                            <input type="password" name="password2" id="password2" class="form-control">
+                            <label for="password2 error" id="password2_error" class="text-danger"></label>
+                        </div>
+
+                        <input type="submit" class="btn btn-primary" value="Sign Up">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
+
+
+<!-- for javascript validation file -->
+{% block extrajs %}
+<script src="{% static 'js/signup-validator.js' %}"></script>
+{% endblock extrajs %}
