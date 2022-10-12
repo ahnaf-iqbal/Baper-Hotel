@@ -9,3 +9,5 @@ A web application where customers can register, login and place order for food i
 * Bootstrap
 * Django
 * SQLite3
+## Home Page
+![Uploading image.png…]()
