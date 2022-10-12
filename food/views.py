@@ -172,5 +172,5 @@ def search(request):
     context = {                        # we create a dictionary context which stores the foodname object 
         'foodname' : foodname
     }
-    return render(request, 'food/search.html', context)     # we pass this dictionary to search.html, there we can use foodname object to fetch values from Food table
+    return render(request, 'food/search.html', context)     
 
